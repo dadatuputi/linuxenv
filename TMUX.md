@@ -8,6 +8,11 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 pip install powerline-status
 ```
 
+## Clone .tmux.conf
+```
+wget https://raw.githubusercontent.com/dadatuputi/linuxenv/main/.tmux.conf
+```
+
 ## Refresh tmux environment
 ```
 tmux source ~/.tmux.conf 

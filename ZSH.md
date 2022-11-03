@@ -15,4 +15,4 @@ https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel1
 
 # Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
 
-`sed 's/ZSH_THEME=.*/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc`
+`sed -i 's/ZSH_THEME=.*/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc`

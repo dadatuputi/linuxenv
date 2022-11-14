@@ -1,3 +1,3 @@
 ```bash
-apt install zsh vim
+apt install zsh vim git curl
 ```

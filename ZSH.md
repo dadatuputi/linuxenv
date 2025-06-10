@@ -1,8 +1,15 @@
-## Install ZSH
+# Install ZSH
 `apt install zsh`
 
 ## Set Zsh as default shell
 `chsh -s /bin/zsh`
+
+# Use OhMyPosh or OhMyZsh
+
+## Install OhMyPosh
+`curl -s https://ohmyposh.dev/install.sh | bash -s`
+`echo 'source ~/.profile' >> ~/.zshrc` <- this makes sure oh-my-posh is available for the next line
+`echo 'eval "$(oh-my-posh init zsh)"' >> ~/.zshrc`
 
 ## Install OhMyZsh
 `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`

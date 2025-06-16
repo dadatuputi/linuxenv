@@ -10,8 +10,6 @@
 ```bash
 curl -s https://ohmyposh.dev/install.sh | bash -s
 echo 'export PATH=$PATH:/root/.local/bin' >> ~/.profile
-echo 'source ~/.profile' >> ~/.zshrc # this makes sure oh-my-posh is available for the next line
-echo 'eval "$(oh-my-posh init zsh)"' >> ~/.zshrc
 ```
 
 ## Install OhMyZsh

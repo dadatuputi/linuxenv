@@ -25,6 +25,7 @@
 #source $ZSH/oh-my-zsh.sh
 
 # Oh My Posh settings
+source ~/.profile # this makes sure oh-my-posh is available for the next line
 eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/atomic.omp.json')"
 
 # If you come from bash you might have to change your $PATH.

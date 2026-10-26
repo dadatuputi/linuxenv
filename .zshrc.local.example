@@ -1,0 +1,22 @@
+# ~/.zshrc.local - per-machine settings, sourced at the end of ~/.zshrc.
+# Not committed. Copy the parts that apply to this machine.
+#
+# There is also ~/.zshrc.local.pre, sourced just before completion is set up.
+# Use it for anything that must run before compinit.
+
+# --- ~/.zshrc.local.pre example ---
+# # zsh-autocomplete runs compinit itself and must load before it.
+# LINUXENV_SKIP_COMPINIT=1
+# source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+# --- ~/.zshrc.local examples ---
+# # Use a different SSH agent
+# export SSH_AUTH_SOCK=$HOME/.some-agent.sock
+#
+# # Extra PATH entries for tools installed in your home directory
+# path+=( $HOME/.tool/bin )
+#
+# # Read a credential from a file at runtime; never put the value here.
+# export SOME_TOKEN="$(cat ~/.config/some-tool/token 2>/dev/null)"
+#
+# # Blocks that installers append (conda init, etc.) also belong here.

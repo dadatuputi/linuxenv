@@ -6,11 +6,14 @@
       "segments": [
         {
           "background": "#0077c2",
+          "background_templates": [
+            "{{ if .Env.PROMPT_HOST_COLOR }}{{ .Env.PROMPT_HOST_COLOR }}{{ end }}"
+          ],
           "foreground": "#ffffff",
           "leading_diamond": "\u256d\u2500\ue0b6",
           "style": "diamond",
-          "template": "\uf120 {{ .Name }} ",
-          "type": "shell"
+          "template": "\uf108 {{ if .Env.PROMPT_HOST }}{{ .Env.PROMPT_HOST }}{{ else }}{{ .HostName }}{{ end }} ",
+          "type": "session"
         },
         {
           "background": "#ef5350",

@@ -18,6 +18,7 @@ Settings beyond the plugins:
 - Splits and new windows open in the current directory.
 - Pane titles on the bottom border: `index - title (command)`.
 - `prefix + r` reloads the config.
+- Terminal tab title is `host: session:window`.
 
 ## Plugins
 

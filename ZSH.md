@@ -36,6 +36,11 @@ After running it, move the block it adds into `~/.zshrc.local` and
 
 ## oh-my-posh
 
+The first prompt segment shows the machine name so terminals are easy to tell
+apart. It uses the hostname unless `PROMPT_HOST` is set, and its background is
+`PROMPT_HOST_COLOR` (any `#rrggbb`) if set, else blue. Set both in
+`~/.zshrc.local` with `export`, for example a different colour per machine.
+
 Every machine uses the same prompt. `install.sh --posh` installs
 oh-my-posh to `~/.local/bin` on Debian and through Homebrew on macOS. The theme is upstream
 `atomic` with the right-aligned block removed, which fixed a blue fill bar on

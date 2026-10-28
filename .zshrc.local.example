@@ -10,6 +10,11 @@
 # source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # --- ~/.zshrc.local examples ---
+# # Prompt host label and colour (default: the short hostname on blue).
+# # Must be exported: oh-my-posh reads them from the environment.
+# export PROMPT_HOST=myhost
+# export PROMPT_HOST_COLOR='#2e7d32'
+#
 # # Use a different SSH agent
 # export SSH_AUTH_SOCK=$HOME/.some-agent.sock
 #

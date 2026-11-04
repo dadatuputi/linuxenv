@@ -95,5 +95,6 @@
       "type": "prompt"
     }
   ],
+  "shell_integration": true,
   "version": 3
 }

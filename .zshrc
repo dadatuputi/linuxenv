@@ -109,6 +109,17 @@ fi
 
 # --- Integrations -----------------------------------------------------------
 [[ -r $HOME/.iterm2_shell_integration.zsh ]] && source $HOME/.iterm2_shell_integration.zsh
+# oh-my-posh redraws PS1 itself (including asynchronously), which discards the
+# prompt marks iTerm2's script wraps around PS1. The theme sets
+# "shell_integration": true and emits the FinalTerm marks (OSC 133 A/B/C/D)
+# itself, so turn off iTerm2's own marking to avoid duplicates. The script's
+# CurrentDir/RemoteHost reporting stays.
+if (( $+functions[iterm2_decorate_prompt] && $+functions[_omp_precmd] )); then
+  iterm2_decorate_prompt() { :; }
+  iterm2_before_cmd_executes() { :; }
+  iterm2_after_cmd_executes() { iterm2_print_state_data }
+  iterm2_preexec() { :; }
+fi
 
 # Optional plugins, loaded only if installed (apt or brew).
 for _f in \
